@@ -47,7 +47,7 @@ for (let i = 1; i <= maxNumber; i++) {
   // ALTRIMENTI stampo il normale numero di cui ha valore i
   else {
     // stampo i numeri da 1 a 100
-    msgOutput = console.log(`${i}`);
+    msgOutput = console.log(i);
   }
 }
 
