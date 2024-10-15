@@ -30,20 +30,22 @@ let msgOutput;
 // ciclo per stampare tutti i numeri da 1 a 100
 for (let i = 1; i <= maxNumber; i++) {
   // SE il numero è divisibile sia per 3 e per 5
-  if (i >= 3 && i % 3 === 0 && i % 5 === 0) {
+  if (i % 3 === 0 && i % 5 === 0) {
     // carico nella variabile msgOutput il valore "FizzBuzz"
     msgOutput = console.log(txtMultiply3And5);
   }
-  // SE il numero è divisibile per 3
-  else if (i >= 3 && i % 3 === 0) {
+  // ALTRIMENTI SE il numero è divisibile per 3
+  else if (i % 3 === 0) {
     // carico nella variabile msgOutput il valore "Fizz"
     msgOutput = console.log(txtMultiply3);
   }
-  // SE il numero è divisibile per 5
-  else if (i >= 5 && i % 5 === 0) {
+  // ALTRIMENTI SE il numero è divisibile per 5
+  else if (i % 5 === 0) {
     // carico nella variabile msgOutput il valore "Buzz"
     msgOutput = console.log(txtMultiply5);
-  } else {
+  }
+  // ALTRIMENTI stampo il normale numero di cui ha valore i
+  else {
     // stampo i numeri da 1 a 100
     msgOutput = console.log(`${i}`);
   }
